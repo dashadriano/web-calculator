@@ -1,0 +1,60 @@
+/* display darkest, body second darkest, and green operators theme */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(245, 245, 245);
+}
+#calculator {
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(50, 50, 50);
+    border-radius: 25px;
+    max-width: 500px;
+    overflow: hidden;
+}
+#display {
+    width: 100%;
+    padding: 25px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background: rgb(35, 35, 35);
+    color: white;
+    
+}
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(100, 100, 100);
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* hovering should lighten, clicking should make it flash */
+button:hover {
+    background-color:rgb(150, 150, 150);
+}
+button:active {
+    background-color:rgb(200, 200, 200);
+}
+.operatorBtn {
+    background-color: rgb(45, 205, 110);
+}
+.operatorBtn:hover {
+    background-color: rgb(45, 225, 130);
+}
+.operatorBtn:active {
+    background-color: rgb(45, 255, 130);
+}
